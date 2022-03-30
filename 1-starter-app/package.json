@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "npx prettier --write .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,6 +17,7 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
-    "open": "^8.4.0"
+    "open": "^8.4.0",
+    "prettier": "2.6.1"
   }
 }

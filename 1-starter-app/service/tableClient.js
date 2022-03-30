@@ -5,11 +5,11 @@ const serviceClient = TableClient.fromConnectionString(
   env.tableName
 );
 
-const getData = async function(){
+const getEntities = async function(){
     // todo
  
 }
-const filterData = async function(option){
+const filterEntities = async function(option){
    // todo
 }
 const createEntity = async function(entity){
@@ -28,8 +28,8 @@ const updateEntity = async function(entity){
 }
 const tableClient = {
     client:serviceClient,
-    getData,
-    filterData,
+    getEntities,
+    filterEntities,
     createEntity,
     removeEntity,
     upsertEntity,

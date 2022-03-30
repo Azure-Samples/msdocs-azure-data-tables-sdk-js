@@ -1,7 +1,7 @@
 const sampleData = [
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-01",
       "ObservationTime": "00:00",
       "Temperature": 72,
       "Humidity": 82,
@@ -11,8 +11,8 @@ const sampleData = [
       "Precipitation": 0.01
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-01",
       "ObservationTime": "03:00",
       "Temperature": 70,
       "Humidity": 87,
@@ -22,8 +22,8 @@ const sampleData = [
       "Precipitation": 0.14
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-01",
       "ObservationTime": "06:00",
       "Temperature": 68,
       "Humidity": 84,
@@ -33,8 +33,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-01",
       "ObservationTime": "09:00",
       "Temperature": 72,
       "Humidity": 66,
@@ -44,8 +44,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-01",
       "ObservationTime": "12:00",
       "Temperature": 76,
       "Humidity": 50,
@@ -55,8 +55,8 @@ const sampleData = [
       "Precipitation": 0.01
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-01",
       "ObservationTime": "15:00",
       "Temperature": 77,
       "Humidity": 47,
@@ -66,8 +66,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-01",
       "ObservationTime": "18:00",
       "Temperature": 72,
       "Humidity": 48,
@@ -77,8 +77,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-01",
       "ObservationTime": "21:00",
       "Temperature": 65,
       "Humidity": 59,
@@ -88,8 +88,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-02",
       "ObservationTime": "00:00",
       "Temperature": 63,
       "Humidity": 65,
@@ -99,8 +99,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-02",
       "ObservationTime": "03:00",
       "Temperature": 62,
       "Humidity": 75,
@@ -110,8 +110,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-02",
       "ObservationTime": "06:00",
       "Temperature": 62,
       "Humidity": 78,
@@ -121,8 +121,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-02",
       "ObservationTime": "09:00",
       "Temperature": 68,
       "Humidity": 65,
@@ -132,8 +132,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-02",
       "ObservationTime": "12:00",
       "Temperature": 71,
       "Humidity": 53,
@@ -143,8 +143,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-02",
       "ObservationTime": "15:00",
       "Temperature": 73,
       "Humidity": 41,
@@ -154,8 +154,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-02",
       "ObservationTime": "18:00",
       "Temperature": 72,
       "Humidity": 44,
@@ -165,8 +165,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-02",
       "ObservationTime": "21:00",
       "Temperature": 66,
       "Humidity": 54,
@@ -176,8 +176,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-03",
       "ObservationTime": "00:00",
       "Temperature": 63,
       "Humidity": 70,
@@ -187,8 +187,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-03",
       "ObservationTime": "03:00",
       "Temperature": 59,
       "Humidity": 81,
@@ -198,8 +198,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-03",
       "ObservationTime": "06:00",
       "Temperature": 60,
       "Humidity": 75,
@@ -209,8 +209,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-03",
       "ObservationTime": "09:00",
       "Temperature": 70,
       "Humidity": 56,
@@ -220,8 +220,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-03",
       "ObservationTime": "12:00",
       "Temperature": 80,
       "Humidity": 51,
@@ -231,8 +231,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-03",
       "ObservationTime": "15:00",
       "Temperature": 85,
       "Humidity": 45,
@@ -242,8 +242,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-03",
       "ObservationTime": "18:00",
       "Temperature": 85,
       "Humidity": 48,
@@ -253,8 +253,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-03",
       "ObservationTime": "21:00",
       "Temperature": 80,
       "Humidity": 64,
@@ -264,8 +264,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-04",
       "ObservationTime": "00:00",
       "Temperature": 75,
       "Humidity": 71,
@@ -275,8 +275,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-04",
       "ObservationTime": "03:00",
       "Temperature": 72,
       "Humidity": 73,
@@ -286,8 +286,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-04",
       "ObservationTime": "06:00",
       "Temperature": 70,
       "Humidity": 79,
@@ -297,8 +297,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-04",
       "ObservationTime": "09:00",
       "Temperature": 77,
       "Humidity": 66,
@@ -308,8 +308,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-04",
       "ObservationTime": "12:00",
       "Temperature": 84,
       "Humidity": 55,
@@ -319,8 +319,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-04",
       "ObservationTime": "15:00",
       "Temperature": 88,
       "Humidity": 45,
@@ -330,8 +330,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-04",
       "ObservationTime": "18:00",
       "Temperature": 87,
       "Humidity": 51,
@@ -341,8 +341,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Chicago",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Chicago",
+      "RowKey": "2021-07-04",
       "ObservationTime": "21:00",
       "Temperature": 82,
       "Humidity": 63,
@@ -352,8 +352,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-01",
       "ObservationTime": "00:00",
       "Temperature": 76,
       "Humidity": 97,
@@ -363,8 +363,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-01",
       "ObservationTime": "03:00",
       "Temperature": 75,
       "Humidity": 96,
@@ -374,8 +374,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-01",
       "ObservationTime": "06:00",
       "Temperature": 75,
       "Humidity": 100,
@@ -385,8 +385,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-01",
       "ObservationTime": "09:00",
       "Temperature": 81,
       "Humidity": 85,
@@ -396,8 +396,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-01",
       "ObservationTime": "12:00",
       "Temperature": 79,
       "Humidity": 88,
@@ -407,8 +407,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-01",
       "ObservationTime": "15:00",
       "Temperature": 78,
       "Humidity": 87,
@@ -418,8 +418,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-01",
       "ObservationTime": "18:00",
       "Temperature": 79,
       "Humidity": 88,
@@ -429,8 +429,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-01",
       "ObservationTime": "21:00",
       "Temperature": 79,
       "Humidity": 88,
@@ -440,8 +440,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-02",
       "ObservationTime": "00:00",
       "Temperature": 79,
       "Humidity": 79,
@@ -451,8 +451,8 @@ const sampleData = [
       "Precipitation": 0.03
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-02",
       "ObservationTime": "03:00",
       "Temperature": 79,
       "Humidity": 94,
@@ -462,8 +462,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-02",
       "ObservationTime": "06:00",
       "Temperature": 79,
       "Humidity": 88,
@@ -473,8 +473,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-02",
       "ObservationTime": "09:00",
       "Temperature": 79,
       "Humidity": 88,
@@ -484,8 +484,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-02",
       "ObservationTime": "12:00",
       "Temperature": 87,
       "Humidity": 64,
@@ -495,8 +495,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-02",
       "ObservationTime": "15:00",
       "Temperature": 90,
       "Humidity": 57,
@@ -506,8 +506,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-02",
       "ObservationTime": "18:00",
       "Temperature": 88,
       "Humidity": 65,
@@ -517,8 +517,8 @@ const sampleData = [
       "Precipitation": 0.2
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-02",
       "ObservationTime": "21:00",
       "Temperature": 77,
       "Humidity": 94,
@@ -528,8 +528,8 @@ const sampleData = [
       "Precipitation": 0.37
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-03",
       "ObservationTime": "00:00",
       "Temperature": 77,
       "Humidity": 96,
@@ -539,8 +539,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-03",
       "ObservationTime": "03:00",
       "Temperature": 76,
       "Humidity": 97,
@@ -550,8 +550,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-03",
       "ObservationTime": "06:00",
       "Temperature": 76,
       "Humidity": 100,
@@ -561,8 +561,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-03",
       "ObservationTime": "09:00",
       "Temperature": 85,
       "Humidity": 75,
@@ -572,8 +572,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-03",
       "ObservationTime": "12:00",
       "Temperature": 89,
       "Humidity": 63,
@@ -583,8 +583,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-03",
       "ObservationTime": "15:00",
       "Temperature": 94,
       "Humidity": 62,
@@ -594,8 +594,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-03",
       "ObservationTime": "18:00",
       "Temperature": 91,
       "Humidity": 57,
@@ -605,8 +605,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-03",
       "ObservationTime": "21:00",
       "Temperature": 87,
       "Humidity": 57,
@@ -616,8 +616,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-04",
       "ObservationTime": "00:00",
       "Temperature": 82,
       "Humidity": 82,
@@ -627,8 +627,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-04",
       "ObservationTime": "03:00",
       "Temperature": 80,
       "Humidity": 100,
@@ -638,8 +638,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-04",
       "ObservationTime": "06:00",
       "Temperature": 80,
       "Humidity": 90,
@@ -649,8 +649,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-04",
       "ObservationTime": "09:00",
       "Temperature": 82,
       "Humidity": 77,
@@ -660,8 +660,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-04",
       "ObservationTime": "12:00",
       "Temperature": 90,
       "Humidity": 59,
@@ -671,8 +671,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-04",
       "ObservationTime": "15:00",
       "Temperature": 92,
       "Humidity": 60,
@@ -682,8 +682,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-04",
       "ObservationTime": "18:00",
       "Temperature": 89,
       "Humidity": 65,
@@ -693,8 +693,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Miami",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Miami",
+      "RowKey": "2021-07-04",
       "ObservationTime": "21:00",
       "Temperature": 82,
       "Humidity": 82,
@@ -704,8 +704,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-01",
       "ObservationTime": "00:00",
       "Temperature": 89,
       "Humidity": 39,
@@ -715,8 +715,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-01",
       "ObservationTime": "03:00",
       "Temperature": 88,
       "Humidity": 40,
@@ -726,8 +726,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-01",
       "ObservationTime": "06:00",
       "Temperature": 86,
       "Humidity": 38,
@@ -737,8 +737,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-01",
       "ObservationTime": "09:00",
       "Temperature": 93,
       "Humidity": 31,
@@ -748,8 +748,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-01",
       "ObservationTime": "12:00",
       "Temperature": 100,
       "Humidity": 23,
@@ -759,8 +759,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-01",
       "ObservationTime": "15:00",
       "Temperature": 104,
       "Humidity": 19,
@@ -770,8 +770,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-01",
       "ObservationTime": "18:00",
       "Temperature": 106,
       "Humidity": 19,
@@ -781,8 +781,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-01",
       "ObservationTime": "21:00",
       "Temperature": 102,
       "Humidity": 21,
@@ -792,8 +792,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-02",
       "ObservationTime": "00:00",
       "Temperature": 93,
       "Humidity": 36,
@@ -803,8 +803,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-02",
       "ObservationTime": "03:00",
       "Temperature": 89,
       "Humidity": 42,
@@ -814,8 +814,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-02",
       "ObservationTime": "06:00",
       "Temperature": 90,
       "Humidity": 37,
@@ -825,8 +825,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-02",
       "ObservationTime": "09:00",
       "Temperature": 92,
       "Humidity": 38,
@@ -836,8 +836,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-02",
       "ObservationTime": "12:00",
       "Temperature": 96,
       "Humidity": 32,
@@ -847,8 +847,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-02",
       "ObservationTime": "15:00",
       "Temperature": 101,
       "Humidity": 26,
@@ -858,8 +858,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-02",
       "ObservationTime": "18:00",
       "Temperature": 103,
       "Humidity": 22,
@@ -869,8 +869,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-02",
       "ObservationTime": "21:00",
       "Temperature": 98,
       "Humidity": 25,
@@ -880,8 +880,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-03",
       "ObservationTime": "00:00",
       "Temperature": 92,
       "Humidity": 38,
@@ -891,8 +891,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-03",
       "ObservationTime": "03:00",
       "Temperature": 91,
       "Humidity": 37,
@@ -902,8 +902,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-03",
       "ObservationTime": "06:00",
       "Temperature": 88,
       "Humidity": 42,
@@ -913,8 +913,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-03",
       "ObservationTime": "09:00",
       "Temperature": 94,
       "Humidity": 36,
@@ -924,8 +924,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-03",
       "ObservationTime": "12:00",
       "Temperature": 99,
       "Humidity": 29,
@@ -935,8 +935,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-03",
       "ObservationTime": "15:00",
       "Temperature": 104,
       "Humidity": 22,
@@ -946,8 +946,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-03",
       "ObservationTime": "18:00",
       "Temperature": 104,
       "Humidity": 60,
@@ -957,8 +957,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-03",
       "ObservationTime": "21:00",
       "Temperature": 81,
       "Humidity": 77,
@@ -968,8 +968,8 @@ const sampleData = [
       "Precipitation": 0.21
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-04",
       "ObservationTime": "00:00",
       "Temperature": 81,
       "Humidity": 72,
@@ -979,8 +979,8 @@ const sampleData = [
       "Precipitation": 0.05
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-04",
       "ObservationTime": "03:00",
       "Temperature": 81,
       "Humidity": 72,
@@ -990,8 +990,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-04",
       "ObservationTime": "06:00",
       "Temperature": 81,
       "Humidity": 74,
@@ -1001,8 +1001,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-04",
       "ObservationTime": "09:00",
       "Temperature": 86,
       "Humidity": 70,
@@ -1012,8 +1012,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-04",
       "ObservationTime": "12:00",
       "Temperature": 94,
       "Humidity": 38,
@@ -1023,8 +1023,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-04",
       "ObservationTime": "15:00",
       "Temperature": 99,
       "Humidity": 31,
@@ -1034,8 +1034,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-04",
       "ObservationTime": "18:00",
       "Temperature": 102,
       "Humidity": 26,
@@ -1045,8 +1045,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Phoenix",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Phoenix",
+      "RowKey": "2021-07-04",
       "ObservationTime": "21:00",
       "Temperature": 98,
       "Humidity": 31,
@@ -1056,8 +1056,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-01",
       "ObservationTime": "00:00",
       "Temperature": 52,
       "Humidity": 77,
@@ -1067,8 +1067,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-01",
       "ObservationTime": "03:00",
       "Temperature": 48,
       "Humidity": 86,
@@ -1078,8 +1078,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-01",
       "ObservationTime": "06:00",
       "Temperature": 48,
       "Humidity": 86,
@@ -1089,8 +1089,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-01",
       "ObservationTime": "09:00",
       "Temperature": 56,
       "Humidity": 75,
@@ -1100,8 +1100,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-01",
       "ObservationTime": "12:00",
       "Temperature": 59,
       "Humidity": 64,
@@ -1111,8 +1111,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-01",
       "ObservationTime": "15:00",
       "Temperature": 61,
       "Humidity": 64,
@@ -1122,8 +1122,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-01",
       "ObservationTime": "18:00",
       "Temperature": 63,
       "Humidity": 65,
@@ -1133,8 +1133,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-01",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-01",
       "ObservationTime": "21:00",
       "Temperature": 68,
       "Humidity": 37,
@@ -1144,8 +1144,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-02",
       "ObservationTime": "00:00",
       "Temperature": 63,
       "Humidity": 50,
@@ -1155,8 +1155,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-02",
       "ObservationTime": "03:00",
       "Temperature": 59,
       "Humidity": 62,
@@ -1166,8 +1166,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-02",
       "ObservationTime": "06:00",
       "Temperature": 56,
       "Humidity": 72,
@@ -1177,8 +1177,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-02",
       "ObservationTime": "09:00",
       "Temperature": 56,
       "Humidity": 84,
@@ -1188,8 +1188,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-02",
       "ObservationTime": "12:00",
       "Temperature": 60,
       "Humidity": 60,
@@ -1199,8 +1199,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-02",
       "ObservationTime": "15:00",
       "Temperature": 63,
       "Humidity": 50,
@@ -1210,8 +1210,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-02",
       "ObservationTime": "18:00",
       "Temperature": 64,
       "Humidity": 45,
@@ -1221,8 +1221,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-02",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-02",
       "ObservationTime": "21:00",
       "Temperature": 60,
       "Humidity": 51,
@@ -1232,8 +1232,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-03",
       "ObservationTime": "00:00",
       "Temperature": 54,
       "Humidity": 66,
@@ -1243,8 +1243,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-03",
       "ObservationTime": "03:00",
       "Temperature": 53,
       "Humidity": 69,
@@ -1254,8 +1254,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-03",
       "ObservationTime": "06:00",
       "Temperature": 50,
       "Humidity": 83,
@@ -1265,8 +1265,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-03",
       "ObservationTime": "09:00",
       "Temperature": 51,
       "Humidity": 86,
@@ -1276,8 +1276,8 @@ const sampleData = [
       "Precipitation": 0.05
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-03",
       "ObservationTime": "12:00",
       "Temperature": 52,
       "Humidity": 83,
@@ -1287,8 +1287,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-03",
       "ObservationTime": "15:00",
       "Temperature": 54,
       "Humidity": 69,
@@ -1298,8 +1298,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-03",
       "ObservationTime": "18:00",
       "Temperature": 56,
       "Humidity": 64,
@@ -1309,8 +1309,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-03",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-03",
       "ObservationTime": "21:00",
       "Temperature": 55,
       "Humidity": 67,
@@ -1320,8 +1320,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-04",
       "ObservationTime": "00:00",
       "Temperature": 53,
       "Humidity": 74,
@@ -1331,8 +1331,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-04",
       "ObservationTime": "03:00",
       "Temperature": 52,
       "Humidity": 74,
@@ -1342,8 +1342,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-04",
       "ObservationTime": "06:00",
       "Temperature": 51,
       "Humidity": 77,
@@ -1353,8 +1353,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-04",
       "ObservationTime": "09:00",
       "Temperature": 53,
       "Humidity": 77,
@@ -1364,8 +1364,8 @@ const sampleData = [
       "Precipitation": 0.05
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-04",
       "ObservationTime": "12:00",
       "Temperature": 58,
       "Humidity": 65,
@@ -1375,8 +1375,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-04",
       "ObservationTime": "15:00",
       "Temperature": 61,
       "Humidity": 58,
@@ -1386,8 +1386,8 @@ const sampleData = [
       "Precipitation": 0.0
     },
     {
-      "partitionKey": "Anchorage",
-      "rowKey": "2021-07-04",
+      "PartitionKey": "Anchorage",
+      "RowKey": "2021-07-04",
       "ObservationTime": "18:00",
       "Temperature": 63,
       "Humidity": 52,
