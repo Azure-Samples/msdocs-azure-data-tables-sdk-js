@@ -1,3 +1,5 @@
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
 "use strict";
 
 var express = require("express");
@@ -129,9 +131,33 @@ app.post("/updateEntity", async function (req, res) {
 
 app.post("/getFilteredRows", async function (req, res) {
   try {
-    const filterEntities = await tableClient.filterEntities(req.body);
+      const queryOptions = {...req.body};
+      if(queryOptions.rowKeyDateStart){
+        queryOptions.rowKeyDateTimeStart=queryOptions.rowKeyDateStart
+      }
+      if(queryOptions.rowKeyTimeStart){
+          if(queryOptions.rowKeyDateTimeStart){
+            queryOptions.rowKeyDateTimeStart += ` ${queryOptions.rowKeyTimeStart}`;
+          }else{
+            queryOptions.rowKeyDateTimeStart=queryOptions.rowKeyTimeStart;
+          }
+        
+      }
+      if(queryOptions.rowKeyDateEnd){
+        queryOptions.rowKeyDateTimeEnd=queryOptions.rowKeyDateEnd
+      }
+      if(queryOptions.rowKeyTimeEnd){
+          if(queryOptions.rowKeyDateTimeEnd){
+            queryOptions.rowKeyDateTimeEnd += ` ${queryOptions.rowKeyTimeEnd}`;
+          }else{
+            queryOptions.rowKeyDateTimeEnd=queryOptions.rowKeyTimeEnd;
+          }
+        
+      }
+    const filterEntities = await tableClient.filterEntities(queryOptions);
     res.send({ listOfKeys: listOfKeys, entitiesList: filterEntities });
   } catch (error) {
+      console.log(error)
     res.status(error.statusCode).send({ msg: error });
   }
 });

@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation. All rights reserved.
+# Licensed under the MIT License.
+
 LOCATION='eastus'
 RESOURCE_GROUP_NAME='rg-msdocs-tables-sdk-demo'
 STORAGE_ACCOUNT_NAME='stmsdocstablessdkdemo123'# Change 123 to a unique three digit value - names must be unique across Azure

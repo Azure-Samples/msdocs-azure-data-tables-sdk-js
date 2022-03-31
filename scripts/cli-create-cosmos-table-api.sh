@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation. All rights reserved.
+# Licensed under the MIT License.
+
 LOCATION='eastus'
 RESOURCE_GROUP_NAME='rg-msdocs-tables-sdk-demo'
 COSMOS_ACCOUNT_NAME='cosmos-msdocs-tables-sdk-demo-123' # Change 123 to a unique three digit value - names must be unique across Azure

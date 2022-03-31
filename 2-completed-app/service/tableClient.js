@@ -1,3 +1,7 @@
+
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
+
 const { TableClient } = require("@azure/data-tables");
 const env = require("../configure/env");
 const serviceClient = TableClient.fromConnectionString(
@@ -16,19 +20,21 @@ const getEntities = async function () {
   return entitiesArray;
 };
 const filterEntities = async function (option) {
+  /*
+    You can query data according to existing fields
+    option provides some conditions to query,eg partitionKey, rowKeyDateTimeStart, rowKeyDateTimeEnd
+    minTemperature, maxTemperature, minPrecipitation, maxPrecipitation
+  */
   const filterEntitiesArray = [];
   const filters = [];
   if (option.partitionKey) {
     filters.push(`PartitionKey eq '${option.partitionKey}'`);
   }
-  if (option.rowKeyDateStart && option.rowKeyTimeStart) {
-    let rowKeyDateTimeStart =
-      option.rowKeyDateStart + " " + option.rowKeyTimeStart;
-    filters.push(`RowKey ge '${rowKeyDateTimeStart}'`);
+  if (option.rowKeyDateTimeStart) {
+    filters.push(`RowKey ge '${option.rowKeyDateTimeStart}'`);
   }
-  if (option.rowKeyDateEnd && option.rowKeyTimeEnd) {
-    let rowKeyDateTimeEnd = option.rowKeyDateEnd + " " + option.rowKeyTimeEnd;
-    filters.push(`RowKey le '${rowKeyDateTimeEnd}'`);
+  if (option.rowKeyDateTimeEnd) {
+    filters.push(`RowKey le '${option.rowKeyDateTimeEnd}'`);
   }
   if (option.minTemperature !== null) {
     filters.push(`Temperature ge ${option.minTemperature}`);

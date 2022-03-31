@@ -1,6 +1,6 @@
 # Azure Data Tables sample application
 
-This is the sample project for using tha [Azure Tables SDK](https://www.npmjs.com/package/@azure/data-tables) library with the Azure Cosmos DB Table API.  The quickstart for this application is located at [https://docs.microsoft.com/en-us/azure/cosmos-db/table/create-table-nodejs](https://docs.microsoft.com/en-us/azure/cosmos-db/table/create-table-nodejs).
+This is the sample project for using tha [Azure Tables SDK](https://www.npmjs.com/package/@azure/data-tables) library with the Azure Cosmos DB Table API.  The quickstart for this application is located at [https://docs.microsoft.com/azure/cosmos-db/table/create-table-nodejs](https://docs.microsoft.com/azure/cosmos-db/table/create-table-nodejs).
 
 ## Features
 
@@ -12,14 +12,14 @@ This sample application is based around storing weather data.  A base set of pro
 
 ### Prerequisites
 
-- An [Azure account](https://docs.microsoft.com/en-us/dotnet/azure/create-azure-account)
+- An [Azure account](https://docs.microsoft.com/dotnet/azure/create-azure-account)
 - [LTS versions of Node.js](https://nodejs.org/en/)
 - [VS Code](https://code.visualstudio.com/)
 
 ### Quickstart
 
 This repository contains three subdirectories.
-- *starter app* - A starter version of the application without any Azure code.  Intended to be used when following the Quickstart at [https://docs.microsoft.com/en-us/azure/cosmos-db/table/create-table-nodejs](https://docs.microsoft.com/en-us/azure/cosmos-db/table/create-table-nodejs).
+- *starter app* - A starter version of the application without any Azure code.  Intended to be used when following the Quickstart at [https://docs.microsoft.com/azure/cosmos-db/table/create-table-nodejs](https://docs.microsoft.com/azure/cosmos-db/table/create-table-nodejs).
 - *completed app* - A completed version of the app for those who want to see the finished code or debug through a fully working application.
 - *scripts* - Azure CLI and Azure PowerShell scripts to create the Azure resources needed to run this sample.
 
@@ -41,4 +41,4 @@ The fastest way to get started is to run the completed application.  For the app
 
 ## Resources
 
-- [Azure.Data.Tables Reference Documentation](https://docs.microsoft.com/en-us/javascript/api/overview/azure/data-tables-readme?view=azure-node-latest)
+- [Azure Data Tables Reference Documentation](https://docs.microsoft.com/javascript/api/overview/azure/data-tables-readme?view=azure-node-latest)

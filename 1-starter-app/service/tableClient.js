@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
+
 const { TableClient } = require("@azure/data-tables");
 const env = require("../configure/env")
 const serviceClient = TableClient.fromConnectionString(
