@@ -54,7 +54,7 @@ app.post("/removeEntity", async function (req, res) {
 
 app.post("/insertTableEntity", async function (req, res) {
   try {
-    await tableClient.createEntity(req.body);
+    await tableClient.insertEntity(req.body);
     res.send({ responseText: "insertTableEntity success" });
   } catch (error) {
     res.status(error.statusCode).send({ msg: error });
@@ -78,7 +78,7 @@ app.post("/insertExpandableData", async function (req, res) {
   };
 
   try {
-    await tableClient.createEntity(entity);
+    await tableClient.insertEntity(entity);
     res.send({ responseText: "insertExpandableData success" });
   } catch (error) {
     res.status(error.statusCode).send({ msg: error });
@@ -107,7 +107,7 @@ app.post("/insertSampleData", async function (req, res) {
   try {
     for (let entity of insertData) {
       entity.RowKey = entity.RowKey + " " + entity.ObservationTime;
-      await tableClient.createEntity(entity);
+      await tableClient.insertEntity(entity);
     }
     res.send({ responseText: "insertSampleData success" });
   } catch (error) {

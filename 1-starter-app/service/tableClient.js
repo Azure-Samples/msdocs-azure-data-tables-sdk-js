@@ -15,7 +15,7 @@ const getEntities = async function(){
 const filterEntities = async function(option){
    // todo
 }
-const createEntity = async function(entity){
+const insertEntity = async function(entity){
     // todo
     
 }
@@ -33,7 +33,7 @@ const tableClient = {
     client:serviceClient,
     getEntities,
     filterEntities,
-    createEntity,
+    insertEntity,
     removeEntity,
     upsertEntity,
     updateEntity

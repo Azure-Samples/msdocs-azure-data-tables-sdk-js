@@ -12,9 +12,9 @@ const serviceClient = TableClient.fromConnectionString(
 // get all entities
 const getEntities = async function () {
   const entitiesArray = [];
-  const res = serviceClient.listEntities();
+  const entities = serviceClient.listEntities();
 
-  for await (const entity of res) {
+  for await (const entity of entities) {
     entitiesArray.push(entity);
   }
   return entitiesArray;
@@ -48,18 +48,18 @@ const filterEntities = async function (option) {
   if (option.maxPrecipitation !== null) {
     filters.push(`Precipitation le ${option.maxPrecipitation}`);
   }
-  const res = serviceClient.listEntities({
+  const entities = serviceClient.listEntities({
     queryOptions: {
       filter: filters.join(" and "),
     },
   });
-  for await (const entity of res) {
+  for await (const entity of entities) {
     filterEntitiesArray.push(entity);
   }
 
   return filterEntitiesArray;
 };
-const createEntity = async function (entity) {
+const insertEntity = async function (entity) {
   await serviceClient.createEntity(entity);
 };
 const removeEntity = async function (partitionKey, rowKey) {
@@ -75,7 +75,7 @@ const tableClient = {
   client: serviceClient,
   getEntities,
   filterEntities,
-  createEntity,
+  insertEntity,
   removeEntity,
   upsertEntity,
   updateEntity,

@@ -13,7 +13,7 @@ This sample application is based around storing weather data.  A base set of pro
 ### Prerequisites
 
 - An [Azure account](https://docs.microsoft.com/dotnet/azure/create-azure-account)
-- [LTS versions of Node.js](https://nodejs.org/en/)
+- [LTS versions of Node.js](https://nodejs.org/)
 - [VS Code](https://code.visualstudio.com/)
 
 ### Quickstart
