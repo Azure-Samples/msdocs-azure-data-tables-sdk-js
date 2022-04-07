@@ -1,0 +1,755 @@
+ <!-- Copyright (c) Microsoft Corporation. All rights reserved. -->
+<!--  Licensed under the MIT License. -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page - Azure Tables Demo Application</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="./site/css/site.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <style>
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
+      >
+        <div class="container">
+          <a class="navbar-brand" id="applicationLink" href="./index.html"
+            >AzureTablesDemoApplication</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse"
+          >
+            <ul class="navbar-nav flex-grow-1">
+              <li class="nav-item">
+                <a class="nav-link text-dark" id="homeLink" href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-dark"
+                  id="filterLink"
+                  href="./filter.html"
+                  >Filter Results</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <main role="main" class="pb-3" id="main-context">
+        <div class="row justify-content-evenly" id="buttonArea">
+          <div class="col-auto">
+            <button
+              class="btn btn-secondary"
+              data-bs-toggle="modal"
+              data-bs-target="#insertUsingTableEntity"
+            >
+              Insert using Table Entity
+            </button>
+          </div>
+          <div class="col-auto">
+            <button
+              class="btn btn-secondary"
+              data-bs-toggle="modal"
+              data-bs-target="#insertUsingExpandedData"
+            >
+              Insert using Expandable Data
+            </button>
+          </div>
+          <div class="col-auto">
+            <button
+              class="btn btn-secondary"
+              data-bs-toggle="modal"
+              data-bs-target="#insertSampleData"
+            >
+              Insert Sample Data
+            </button>
+          </div>
+        </div>
+        <hr />
+        <h3>Weather Data</h3>
+        <table class="table table-sm mb-1" id="result-table"></table>
+
+        <!-- Insert with TableEntity Dialog -->
+        <div id="insertUsingTableEntity" class="modal fade" tabindex="-1">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header" id="UsingTableEntityModalHeader">
+                <h5 class="modal-title">Insert using TableEntity</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  onclick="javascript:removeErrorLabelAndResetValue('UsingTableEntity')"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body" id="tableEntityModalBody">
+                <div class="row g-3 mb-2">
+                  <div class="col-sm-4">
+                    <label for="stationNameTableEntity" class="col-form-label"
+                      >Station Name</label
+                    >
+                  </div>
+                  <div class="col-sm-8">
+                    <input
+                      type="text"
+                      id="stationNameTableEntity"
+                      name="stationName"
+                      class="form-control"
+                      placeholder="Weather station name"
+                    />
+                  </div>
+                </div>
+
+                <div class="row g-3 mb-2">
+                  <div class="col-sm-4">
+                    <label
+                      for="observationDateTableEntity"
+                      class="col-form-label"
+                      >Date/Time</label
+                    >
+                  </div>
+                  <div class="col-sm-4">
+                    <input
+                      type="date"
+                      id="observationDateTableEntity"
+                      name="observationDate"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="col-sm-4">
+                    <input
+                      type="time"
+                      id="observationTimeTableEntity"
+                      name="observationTime"
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+
+                <div class="row g-3 mb-2">
+                  <div class="col-sm-4">
+                    <label for="temperatureTableEntity" class="col-form-label"
+                      >Temperature</label
+                    >
+                  </div>
+                  <div class="col-sm-8">
+                    <input
+                      type="text"
+                      id="temperatureTableEntity"
+                      name="Temperature"
+                      class="form-control"
+                      placeholder="Current temperature"
+                    />
+                  </div>
+                </div>
+
+                <div class="row g-3 mb-2">
+                  <div class="col-sm-4">
+                    <label for="humidityTableEntity" class="col-form-label"
+                      >Humidity</label
+                    >
+                  </div>
+                  <div class="col-sm-8">
+                    <input
+                      type="text"
+                      id="humidityTableEntity"
+                      name="Humidity"
+                      class="form-control"
+                      placeholder="% Humidity"
+                    />
+                  </div>
+                </div>
+
+                <div class="row g-3 mb-2">
+                  <div class="col-sm-4">
+                    <label for="barometerTableEntity" class="col-form-label"
+                      >Barometer</label
+                    >
+                  </div>
+                  <div class="col-sm-8">
+                    <input
+                      type="text"
+                      id="barometerTableEntity"
+                      name="Barometer"
+                      class="form-control"
+                      placeholder="Atmospheric pressure"
+                    />
+                  </div>
+                </div>
+
+                <div class="row g-3 mb-2">
+                  <div class="col-sm-4">
+                    <label for="windSpeedTableEntity" class="col-form-label"
+                      >Wind Direction</label
+                    >
+                  </div>
+                  <div class="col-sm-8">
+                    <select
+                      id="windDirectionTableEntity"
+                      name="WindDirection"
+                      class="form-control"
+                    >
+                      <option>CALM</option>
+                      <option>N</option>
+                      <option>NE</option>
+                      <option>NW</option>
+                      <option>E</option>
+                      <option>W</option>
+                      <option>SW</option>
+                      <option>SE</option>
+                      <option>S</option>
+                      <option>VARIABLE</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row g-3 mb-2">
+                  <div class="col-sm-4">
+                    <label for="windSpeedTableEntity" class="col-form-label"
+                      >Wind Speed</label
+                    >
+                  </div>
+                  <div class="col-sm-8">
+                    <input
+                      type="text"
+                      id="windSpeedTableEntity"
+                      name="WindSpeed"
+                      class="form-control"
+                      placeholder="Wind speed"
+                    />
+                  </div>
+                </div>
+
+                <div class="row g-3 mb-2">
+                  <div class="col-sm-4">
+                    <label for="precipitationTableEntity" class="col-form-label"
+                      >Precipitation</label
+                    >
+                  </div>
+                  <div class="col-sm-8">
+                    <input
+                      type="text"
+                      id="precipitationTableEntity"
+                      name="Precipitation"
+                      class="form-control"
+                      placeholder="Precipitation"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                  onclick="javascript:removeErrorLabelAndResetValue('UsingTableEntity')"
+                  id="closeTableEntity"
+                >
+                  Close
+                </button>
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  onclick="javascript:insertTableEntity()"
+                >
+                  Insert
+                </button>
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  onclick="javascript:upsertTableEntity()"
+                >
+                  Upsert
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Insert Expandable Data Dialog -->
+        <div id="insertUsingExpandedData" class="modal fade" tabindex="-1">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">
+                  Insert using Custom Entity (implementing ITableEntity)
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  onclick="javascript:removeErrorLabelAndResetValue('UsingExpandedData')"
+                ></button>
+              </div>
+              <div class="modal-body" id="expandedDataModalBody">
+                <div class="row g-3 mb-2">
+                  <div class="col-sm-4">
+                    <label for="stationNameExpandable" class="col-form-label"
+                      >Station Name</label
+                    >
+                  </div>
+                  <div class="col-sm-8">
+                    <input
+                      type="text"
+                      id="stationNameExpandable"
+                      name="StationName"
+                      class="form-control"
+                      placeholder="Weather station name"
+                    />
+                  </div>
+                </div>
+
+                <div class="row g-3 mb-2">
+                  <div class="col-sm-4">
+                    <label
+                      for="observationDateExpandable"
+                      class="col-form-label"
+                      >Date/Time</label
+                    >
+                  </div>
+                  <div class="col-sm-4">
+                    <input
+                      type="date"
+                      id="observationDateExpandable"
+                      name="ObservationDate"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="col-sm-4">
+                    <input
+                      type="time"
+                      id="observationTimeExpandable"
+                      name="ObservationTime"
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+
+                <div class="row g-3 mb-2">
+                  <div class="col-sm-4">
+                    <label for="temperatureExpandable" class="col-form-label"
+                      >Temperature</label
+                    >
+                  </div>
+                  <div class="col-sm-8">
+                    <input
+                      type="text"
+                      id="temperatureExpandable"
+                      name="Temperature"
+                      class="form-control"
+                      placeholder="Current temperature"
+                    />
+                  </div>
+                </div>
+
+                <div class="row g-3 mb-2">
+                  <div class="col-sm-4">
+                    <label for="humidityExpandable" class="col-form-label"
+                      >Humidity</label
+                    >
+                  </div>
+                  <div class="col-sm-8">
+                    <input
+                      type="text"
+                      id="humidityExpandable"
+                      name="Humidity"
+                      class="form-control"
+                      placeholder="% Humidity"
+                    />
+                  </div>
+                </div>
+
+                <div class="row g-3 mb-2">
+                  <div class="col-sm-4">
+                    <label for="barometerExpandable" class="col-form-label"
+                      >Barometer</label
+                    >
+                  </div>
+                  <div class="col-sm-8">
+                    <input
+                      type="text"
+                      id="barometerExpandable"
+                      name="Barometer"
+                      class="form-control"
+                      placeholder="Atmospheric pressure"
+                    />
+                  </div>
+                </div>
+
+                <div class="row g-3 mb-2">
+                  <div class="col-sm-4">
+                    <label for="windSpeedExpandable" class="col-form-label"
+                      >Wind Direction</label
+                    >
+                  </div>
+                  <div class="col-sm-8">
+                    <select
+                      id="windDirectionExpandable"
+                      name="WindDirection"
+                      class="form-control"
+                    >
+                      <option>CALM</option>
+                      <option>N</option>
+                      <option>NE</option>
+                      <option>NW</option>
+                      <option>E</option>
+                      <option>W</option>
+                      <option>SW</option>
+                      <option>SE</option>
+                      <option>S</option>
+                      <option>VARIABLE</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row g-3 mb-2">
+                  <div class="col-sm-4">
+                    <label for="windSpeedExpandable" class="col-form-label"
+                      >Wind Speed</label
+                    >
+                  </div>
+                  <div class="col-sm-8">
+                    <input
+                      type="text"
+                      id="windSpeedExpandable"
+                      name="WindSpeed"
+                      class="form-control"
+                      placeholder="Wind speed"
+                    />
+                  </div>
+                </div>
+
+                <div class="row g-3 mb-2">
+                  <div class="col-sm-4">
+                    <label for="precipitationExpandable" class="col-form-label"
+                      >Precipitation</label
+                    >
+                  </div>
+                  <div class="col-sm-8">
+                    <input
+                      type="text"
+                      id="precipitationExpandable"
+                      name="Precipitation"
+                      class="form-control"
+                      placeholder="Precipitation"
+                    />
+                  </div>
+                </div>
+
+                <div class="row g-3 mb-2">
+                  <div class="col-sm-4">
+                    <label for="cloudCoverExpandable" class="col-form-label"
+                      >Cloud Cover</label
+                    >
+                  </div>
+                  <div class="col-sm-8">
+                    <input
+                      type="text"
+                      id="cloudCoverExpandable"
+                      name="CloudCover"
+                      class="form-control"
+                      placeholder="Percent Cloud Cover"
+                    />
+                  </div>
+                </div>
+
+                <div class="row g-3 mb-2">
+                  <div class="col-sm-4">
+                    <label for="uvIndexExpandable" class="col-form-label"
+                      >UV Index</label
+                    >
+                  </div>
+                  <div class="col-sm-8">
+                    <input
+                      type="text"
+                      id="uvIndexExpandable"
+                      name="UvIndex"
+                      class="form-control"
+                      placeholder="UV Index"
+                    />
+                  </div>
+                </div>
+
+                <div id="addCustomFieldDiv" class="row g-3 align-self-end">
+                  <div class="col-sm-4">
+                    <button
+                      type="button"
+                      class="btn btn-success"
+                      data-bs-toggle="modal"
+                      data-bs-target="#customFieldModel"
+                    >
+                      Add Custom Field
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                  id="closeExpandable"
+                  onclick="javascript:removeErrorLabelAndResetValue('UsingExpandedData')"
+                >
+                  Close
+                </button>
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  onclick="javascript:insertExpandableData()"
+                >
+                  Insert
+                </button>
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  onclick="javascript:upsertExpandableData()"
+                >
+                  Upsert
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="customFieldModel"
+          tabindex="-2"
+          aria-labelledby="customFieldModelLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="customFieldModelLabel">
+                  Add custom field
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  onclick="$('#customFieldName').val('')"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="row g-3 mb-2">
+                  <div class="col-sm-6">
+                    <label for="customFieldName" class="col-form-label"
+                      >Custom field name</label
+                    >
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="customFieldName"
+                      name="FieldName"
+                      class="form-control"
+                      placeholder="Name"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                  onclick="$('#customFieldName').val('')"
+                >
+                  Cancel
+                </button>
+                <button
+                  id="customFieldButton"
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-dismiss="modal"
+                  onclick="javascript:addCustomField()"
+                >
+                  Add field
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bulk Insert Dialog -->
+        <div
+          id="insertSampleData"
+          class="modal fade"
+          tabindex="-1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Insert sample data</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body" id="sampleDataModalBody">
+                <div class="row g-3 mb-2">
+                  <div class="col-sm-4">
+                    <label for="bulkDataUnits" class="col-form-label"
+                      >Units</label
+                    >
+                  </div>
+                  <div class="col-sm-8">
+                    <select
+                      id="bulkDataUnits"
+                      name="Units"
+                      class="form-control"
+                    >
+                      <option>Metric</option>
+                      <option>US</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row g-3 mb-2">
+                  <div class="col-sm-4">
+                    <label for="sampleDataCity" class="col-form-label"
+                      >City</label
+                    >
+                  </div>
+                  <div class="col-sm-8">
+                    <select
+                      id="sampleDataCity"
+                      name="City"
+                      class="form-control"
+                    >
+                      <option>Anchorage</option>
+                      <option>Chicago</option>
+                      <option>Miami</option>
+                      <option>Phoenix</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                  id="closeSample"
+                  onclick="removeErrorLabelAndResetValue('SampleData')"
+                >
+                  Close
+                </button>
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  onClick="javascript:insertSampleData()"
+                >
+                  Insert
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Update Entity Modal -->
+        <div
+          class="modal fade"
+          id="updateEntityModel"
+          tabindex="-2"
+          aria-labelledby="updateEntityLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="updateEntityLabel">
+                  Update entity
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div id="updateEntityModalBody" class="modal-body"></div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  id="closeUpdateEntity"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                  onclick="javascript:removeErrorLabelAndResetValue('UpdateEntity')"
+                >
+                  Cancel
+                </button>
+                <button
+                  id="updateEntityButton"
+                  class="btn btn-primary"
+                  onclick="javascript:updateTableEntity()"
+                >
+                  Update Entity
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="border-top footer text-muted">
+      <div class="container">
+        &copy; 2021 - AzureTablesDemoApplication -
+        <a id="privacyLink">Privacy</a>
+      </div>
+    </footer>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./site/js/site.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        getAllRows();
+      });
+    </script>
+  </body>
+</html>

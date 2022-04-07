@@ -1,0 +1,23 @@
+{
+  "name": "@msinternal/msdocs-azure-data-tables-sdk-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npx prettier --write .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@azure/data-tables": "^13.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "open": "^8.4.0",
+    "prettier": "2.6.1"
+  }
+}
